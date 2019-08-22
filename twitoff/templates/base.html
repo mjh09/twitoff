@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twitoff - {{ title }}</title>
+        <!-- CSS, keywords, metadata goes here-->
+    </head>
+
+    <body>
+        <h1>Twitoff!</h1>
+        <p>Content for twitoff will go here..</p>
+
+        <ul>
+            {% for user in users %}
+            <li>{{ user.id }} - {{ user.name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
